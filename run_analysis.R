@@ -58,7 +58,7 @@ colnames(m)<-c(fea$V2, "Activity", "Subject")
 
 tidydata<-aggregate(m,by=list(activity= m$Activity, subject=m$Subject), mean)
 
-##remove Acitivity and Subject column as they have served their purpose
+##remove Acitivity and Subject column
 tidydata[,90]<-NULL
 tidydata[,89]<-NULL
 
